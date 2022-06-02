@@ -1,12 +1,9 @@
 # Implementation of Logistic Regression Using Gradient Descent
-
 ## AIM:
 To write a program to implement the the Logistic Regression Using Gradient Descent.
-
 ## Equipments Required:
 1. Hardware – PCs
 2. Anaconda – Python 3.7 Installation / Moodle-Code Runner
-
 ## Algorithm
 1. Import pandas to read the csv File.
 2. Import numpy to develop the mesh grid for the Dataset.
@@ -18,7 +15,6 @@ To write a program to implement the the Logistic Regression Using Gradient Desce
 8. Import matplotli.pyplot to visualize the samples.
 9. Import ListedColormap from matplotlib.colors to customize the representation.
 10. Display the graph.
-
 ## Program:
 ```
 Program to implement the the Logistic Regression Using Gradient Descent.
@@ -68,11 +64,7 @@ plt.ylabel('Estimated Salary',color='yellow')
 plt.legend()
 plt.show()
 ```
-
 ## Output:
 ![logistic regression using gradient descent](sam.png)
-
-
 ## Result:
 Thus the program to implement the the Logistic Regression Using Gradient Descent is written and verified using python programming.
-
