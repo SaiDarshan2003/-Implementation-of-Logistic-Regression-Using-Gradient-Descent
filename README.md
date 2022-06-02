@@ -8,17 +8,22 @@ To write a program to implement the the Logistic Regression Using Gradient Desce
 2. Anaconda – Python 3.7 Installation / Moodle-Code Runner
 
 ## Algorithm
-1. 
-2. 
-3. 
-4. 
+1. Import pandas to read the csv File.
+2. Import numpy to develop the mesh grid for the Dataset.
+3. Import train_test_split from sklearn.model_selection to split the given data.
+4. Import StandardScaler from sklearn.preprocessing to pre-process the sample data.
+5. Import confusion_matrix from sklearn_metrics to find the performance over a time.
+6. Import metrics from the sklearn to find the accuracy of the Dataset.
+7. Import LogisticRegression from sklearn.linear_model
+8. Import matplotli.pyplot to visualize the samples.
+9. Import ListedColormap from matplotlib.colors to customize the representation.
+10. Display the graph.
 
 ## Program:
 ```
-/*
 Program to implement the the Logistic Regression Using Gradient Descent.
-Developed by: 
-RegisterNumber:  
+Developed by: Sai Darshan G
+RegisterNumber: 212221240047  
 import numpy as np
 import matplotlib.pyplot as plt
 import  pandas as pd
@@ -62,7 +67,6 @@ plt.xlabel('Age',color='yellow')
 plt.ylabel('Estimated Salary',color='yellow')
 plt.legend()
 plt.show()
-*/
 ```
 
 ## Output:
