@@ -1,4 +1,4 @@
-# Implementation of Logistic Regression Using Gradient Descent
+## Implementation of Logistic Regression Using Gradient Descent
 ## AIM:
 To write a program to implement the the Logistic Regression Using Gradient Descent.
 ## Equipments Required:
@@ -12,12 +12,11 @@ To write a program to implement the the Logistic Regression Using Gradient Desce
 5. Import confusion_matrix from sklearn_metrics to find the performance over a time.
 6. Import metrics from the sklearn to find the accuracy of the Dataset.
 7. Import LogisticRegression from sklearn.linear_model
-8. Import matplotli.pyplot to visualize the samples.
+8. Import matplotlib.pyplot to visualize the samples.
 9. Import ListedColormap from matplotlib.colors to customize the representation.
 10. Display the graph.
 ## Program:
 ```
-Program to implement the the Logistic Regression Using Gradient Descent.
 Developed by: Sai Darshan G
 RegisterNumber: 212221240047  
 import numpy as np
@@ -30,26 +29,20 @@ from sklearn.model_selection import train_test_split
 X_train,X_test,Y_train,Y_test=train_test_split(X,Y,test_size=0.25,random_state=0)
 from sklearn.preprocessing import StandardScaler
 sc_x=StandardScaler()
-sc_x
-StandardScaler()
 X_train=sc_x.fit_transform(X_train)
 X_test=sc_x.transform(X_test)
 from sklearn.linear_model import LogisticRegression
 Regressor=LogisticRegression(random_state=0)
 Regressor.fit(X_train,Y_train)
 y_pred=Regressor.predict(X_test)
-y_pred
 from sklearn_metrics import confusion_matrix
 cm=confusion_matrix(Y_test,y_pred)
-cm
 from sklearn import metrics
 accuracy=metrics.accuracy_score(Y_test,y_pred)
-accuracy
 recall_sensitivity=metrics.recall_score(Y_test,y_pred,pos_label=1)
 recall_specificity=metrics.recall_score(Y_test,y_pred,pos_label=0)
 recall_sensitivity,recall_specificity
 import matplotlib
-import matplotlib.pyplot as plt
 from matplotlib.colors import ListedColormap
 X_set,Y_Set=X_train,Y_train
 X1,X2=np.meshgrid(np.arange(start=X_set[:,0].min()-1,stop=X_set[:,0].max()+1,step=0.01),np.arange(start=X_set[:,1].min()-1,stop=X_set[:,1].max()+1,step=0.01))
